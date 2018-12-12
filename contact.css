@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family:'Josefin Sans', sans-serif;
+	
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;	
+}
+
+header img {
+	height: 80px;
+	
+}
+
+body {
+	height: 125vh;
+	font-family: 'josefin-sans', sans-serif;
+	display: inline;
+	background-color: #000;
+	
+}
+
+header {
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+}
+
+header * {
+	display: inline;
+	font-size: 15px;
+}
+
+header li {
+	margin: 20px;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: -10px;
+
+}
+
+nav ul {
+	overflow: visible;
+	text-align: right;
+	transition: max-height 0.4s;
+	display: flex;
+	float: right;
+
+} 
+nav ul li {
+	display: inline-block;
+	padding: 0.9px;
+	opacity: 0.8;
+	text-align: center;
+	font-size: 125%;
+	min-width: 100px;
+	float: right;
+}
+
+/*SLUT PÅ HEADER MENU*/
+
+
+/* START CONTANT INFO ICONS*/
+
+p {
+	text-decoration:none;
+	color: #fff;
+	line-height: 300%;
+	text-align: center;
+}
+
+
+.boxes {
+	display: grid;
+	grid-template-columns: auto;
+	background-color: #000000;
+	padding: 200px;
+}
+
+.box {
+	background-color: #000000;
+	border: none;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+
+/* START PÅ FOOTER */
+
+footer {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		height: 80px;
+		width: 100%;
+		overflow:hidden;
+		text-align: center;
+}
+		
+address {
+		line-height: 25px;
+		color:#ffffff;
+		padding-top:15px;
+		font-size:12px;
+    	font-style:normal;
+}
+
+@media screen and (max-width: 620px) {
+	
+	nav ul li {
+	display: inline-block;
+	padding: 10px;
+	}
+}
+
+@media screen and (max-width:580px){
+	header img {
+		display: none;
+	}
+	nav ul {
+		max-height: 0;
+	}
+	.showing {
+		max-height: 20em;
+	}
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		text-align:left;
+	}
+}
